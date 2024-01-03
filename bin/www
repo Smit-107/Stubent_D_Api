@@ -10,7 +10,8 @@ var http = require('http');
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://smitghevariya107:smit1234@cluster0.5tdeqjm.mongodb.net/cdmi_API')
+// mongoose.connect('mongodb+srv://smitghevariya107:smit1234@cluster0.5tdeqjm.mongodb.net/cdmi_API')
+mongoose.connect('mongodb+srv://smitghevariya107:smit1234@cluster0.5tdeqjm.mongodb.net/cdmi_API?retryWrites=true&w=majority')
   .then(() => console.log('Connected!'));
 
 /**
