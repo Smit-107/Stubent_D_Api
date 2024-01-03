@@ -1,0 +1,8 @@
+{
+    "build": {
+      "env": {
+        "MONGODB_URI": "mongodb+srv://smitghevariya107:smit1234@cluster0.5tdeqjm.mongodb.net/cdmi_API?retryWrites=true&w=majority"
+      }
+    }
+  }
+  
