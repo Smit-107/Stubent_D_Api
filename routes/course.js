@@ -8,14 +8,14 @@ const { addContent, viewsingleContent, updateContent, DeleteContent } = require(
 const {  Addadmission, Student_Detalis, updateStudent_Detalis, allStudent_Detalis, deleteStudent_Detalis, SearchStudent, UpdatecompleteTopic, UpdateStudentstatus } = require('../Controller/AdmissionController');
 
 
-// const cors = require('cors');
-// const corsOptions ={
-//     // origin:'http://localhost:3000', 
-//     origin:"https://student-d-ui.vercel.app", 
-//     credentials:true,            //access-control-allow-credentials:true
-//     optionSuccessStatus:200
-// }
-// router.use(cors(corsOptions));
+const cors = require('cors');
+const corsOptions ={
+    // origin:'http://localhost:3000', 
+    origin:"https://student-d-ui.vercel.app", 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+router.use(cors(corsOptions));
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
