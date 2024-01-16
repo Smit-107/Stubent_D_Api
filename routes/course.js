@@ -38,7 +38,7 @@ var storage = multer.diskStorage({
 })
 var upload1 = multer({ storage: storage })
 
-
+router.use(express.static('public'));  // Serve static files
 /* GET home page. */
 router.post('/addcourse',checkToken,addCourse);
 router.get('/allcourse',checkToken,viewCourse)
