@@ -2,7 +2,8 @@ const admissionModel = require("../Model/AdmissionModel");
 const CourseModel = require("../Model/CourseModel");
 
 exports.Addadmission = async (req, res) => {
-  var file = req.file.originalname;
+  // var file = req.file.originalname;
+  var file = req.body.image || req.file.originalname;
 
   var course_data = await CourseModel.find({ _id: req.body.course });
 
